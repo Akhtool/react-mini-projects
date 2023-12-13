@@ -24,6 +24,14 @@ body {
   padding: 40px;
 }
 
+@media screen and (max-width: 450px) {
+  .App {
+    width: 370px;
+    height: 600px;
+    padding: 30px;
+  }
+}
+
 .search {
   position: relative;
 

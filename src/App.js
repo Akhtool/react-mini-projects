@@ -43,10 +43,15 @@ function App() {
     setSuccess(true);
   };
 
+  const onClickBack = () => {
+    setSuccess(false);
+    setInvites([]);
+  };
+
   return (
     <div className="App">
       {success ? (
-        <Success count={invites.length} />
+        <Success onClickBack={onClickBack} count={invites.length} />
       ) : (
         <Users
           searchValue={searchValue}
